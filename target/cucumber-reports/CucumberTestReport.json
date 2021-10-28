@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13522983900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Successful login using valid account",
+        "description": "",
+        "id": "as-a-user,-i-want-to-create-credentials;successful-login-using-valid-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1264819200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 578799400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in testapp Home Page",
+            "match": {
+              "location": "LoginSteps.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169742300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on Login button",
+            "match": {
+              "location": "LoginSteps.clickOnLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 550145400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter testuser@example.com and test123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser@example.com",
+                  "offset": 11
+                },
+                {
+                  "val": "test123",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginSteps.loginPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164428100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on Second Login button",
+            "match": {
+              "location": "LoginSteps.clickOnLoginSecond()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108820800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Success login to home page",
+            "match": {
+              "location": "LoginSteps.successLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SomeTags"
+          },
+          {
+            "line": 3,
+            "name": "@ValidCase"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I want to create credentials",
+    "description": "",
+    "id": "as-a-user,-i-want-to-create-credentials",
+    "keyword": "Feature",
+    "uri": "LoginTest.feature"
+  }
+]
